@@ -1,0 +1,76 @@
+/* product filter app  */
+.product-filter-app {
+  height: auto;
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(253, 253, 253);
+  margin: 50px;
+  box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
+  font-family:  Calibri;
+}
+
+/* searchbar */
+.searchbar {
+  padding: 10px;
+}
+.searchbar > fieldset {
+  border: none;
+  padding: 0px;
+  margin-top: 10px;
+}
+.searchbar input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 3px;
+}
+.searchbar input[type="text"]:focus {
+  outline: 1px solid rgb(182, 182, 182);
+}
+
+.searchbar fieldset label {
+  font-size: 15px;
+  color: rgb(155, 155, 155);
+}
+
+.searchbar fieldset:nth-child(1) input {
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.searchbar fieldset:nth-child(2) input {
+  margin-right: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+/* product table */
+.product-table {
+  margin: 10px 0px 15px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-table tr.product-category-row td{
+   padding-top: 10px;
+   color:rgb(90, 90, 90) ;
+}
+
+.product-table th, td{
+  font-size: 18px;
+  width: 150px;
+  text-align: left;
+}
+
+.product-table td {
+   font-size: 16px;
+   color: rgb(121, 121, 121);
+}
+
+.product-table tr.product-row td:first-child:hover {
+   cursor: pointer;
+   color: rgb(51, 51, 51);
+   text-decoration: underline;
+}

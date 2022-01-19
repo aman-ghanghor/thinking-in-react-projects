@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* global style */
+
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  width: 1400px;
+}
+
+button {
+  all: unset;
+}
+
+.underline {
+   width: 50%;
+   height: 0.5rem;
+   background-color: blue;
+}
+
+main > .title {
+   display: flex ;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+/* category */
+.categories {
+   display: flex;
+   justify-content: center;
+   padding: 2rem 0;
+}
+
+.categories ul {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.categories ul li {
+   margin: 0 0.5rem;
+}
+
+.categories ul li button {
+   text-transform: capitalize;
+   padding: 0.4rem 1rem ;
+   border-radius: 0.3rem;
+   font-size: 1.2rem;
+}
+.categories ul li button:hover {
+    background:#c79e58 ;
+    outline: 2px solid #c79e58;
+}
+
+
+/* menu */
+.menu {
+   display: grid ;
+   grid-template-columns: auto auto;
+   gap: 0 1rem;
+}
+
+.item {
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: row;
+   box-shadow: 0 0 10px 2px rgb(226, 226, 226);
+}
+
+.item .item-img {
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.item img {
+   width: 100% ;
+   height: 100%;
+   object-fit: cover;
+}
+
+.item-content {
+   width: 60%;
+   padding: 0.5rem 1rem;
+   box-sizing: border-box;
+}
+
+.item-content .title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.item-content .title .price {
+   font-size: bold;
+   color: rgb(110, 83, 43);
+   font-size: 1.2rem;
+}
+
+.item-content h4 {
+   display: inline-block;
+   margin: 0;
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+.item-content .desc {
+   line-height: 1.5rem;
+}
